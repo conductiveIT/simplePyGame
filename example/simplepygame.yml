@@ -1,0 +1,40 @@
+general:
+    screen_width: 1024
+    screen_height: 768
+    title: Test Game
+    background_image: background.png
+    max_fps: 60
+    enemy_types: 2
+    score: top-right
+    start_score: 0
+    lives: top-left
+    
+player:
+    controls: arrow_keys
+    x_size: 60
+    y_size: 50
+    x_start: 140
+    y_start: 140
+    movement_amount: 4
+    max_frames_per_second: 20
+    lives: 3
+    
+enemy1:
+    number: 2
+    x_size: 115
+    y_size: 55
+    x_start: random
+    y_start: random
+    movement_amount: random 6
+    max_frames_per_second: 20
+    hit: reduce-life
+
+enemy2:
+    number: 2
+    x_size: 115
+    y_size: 55
+    x_start: random
+    y_start: random
+    movement_amount: wave 4
+    max_frames_per_second: 20
+    hit: reduce-life
